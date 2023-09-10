@@ -1,0 +1,46 @@
+<!DOCTYPE html> HTML> is a declaration that tells the browser what version of HTML the document is written in. This declaration 
+appears as the very first line in an HTML file.
+
+<html lang="en"> The lang attribute specifies which language is used to write the content of a web page. It is used to set the language for the whole text of the web page. The <html lang=”en'> only specifies the language code of 
+the page meaning en or English is used for all the text on the page.
+
+<meta charset="UTF-8"> <meta charset=”utf-8″> is an HTML tag that
+ is used to indicate the web page's character encoding. In order to see the correct content, the tag's function is used which let the browser know what character encoding was used in the HTML document. The tag is located in the document's head.
+
+ <link rel="stylesheet"> The REL attribute is used to define 
+ the relationship between the linked file and the HTML document. REL=StyleSheet specifies a persistent or preferred style while REL="Alternate StyleSheet" defines an alternate style. A persistent style is one that is always applied when style sheets are enabled.
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+
+</body>
+</html>
